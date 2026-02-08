@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OpenCRAW 龍蝦系統建置服務 - 智能情報與高可用解決方案</title>
+    <title>OpenCRAW 龍蝦系統 - 軟硬體一體化智能解決方案</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -48,17 +48,6 @@
         .lobster-icon {
             filter: drop-shadow(0 0 8px var(--lobster-red));
         }
-        .step-number {
-            font-family: 'Outfit', sans-serif;
-            -webkit-text-stroke: 1px var(--lobster-red);
-            color: transparent;
-        }
-        @keyframes float {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-20px); }
-            100% { transform: translateY(0px); }
-        }
-        .floating { animation: float 6s ease-in-out infinite; }
         .model-badge {
             background: rgba(255,255,255,0.1);
             border: 1px solid rgba(255,255,255,0.2);
@@ -67,13 +56,25 @@
             font-size: 0.7rem;
             font-weight: 600;
         }
+        .hardware-spec-badge {
+            background: rgba(255, 77, 77, 0.1);
+            border: 1px solid rgba(255, 77, 77, 0.3);
+            color: var(--lobster-red);
+            padding: 4px 12px;
+            border-radius: 99px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
         details > summary { list-style: none; }
         details > summary::-webkit-details-marker { display: none; }
-        .hardware-badge {
-            background: linear-gradient(135deg, #ff4d4d20, #ff4d4d40);
-            border: 1px solid var(--lobster-red);
-            color: var(--lobster-red);
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
         }
+        .floating { animation: float 6s ease-in-out infinite; }
     </style>
 </head>
 <body>
@@ -86,12 +87,11 @@
                 <span class="text-xl font-bold tracking-wider outfit">OpenCRAW <span class="text-red-500">Intelligence</span></span>
             </div>
             <div class="hidden md:flex space-x-8 text-sm font-medium">
-                <a href="#hardware" class="hover:text-red-500 transition">硬體設備</a>
-                <a href="#features" class="hover:text-red-500 transition">功能盤點</a>
-                <a href="#solutions" class="hover:text-red-500 transition">定價方案</a>
+                <a href="#features" class="hover:text-red-500 transition">技術核心</a>
+                <a href="#solutions" class="hover:text-red-500 transition">一體化方案</a>
                 <a href="#faq" class="hover:text-red-500 transition">常見問題</a>
             </div>
-            <a href="#contact" class="btn-primary px-6 py-2 rounded-full text-sm font-bold">立即諮詢</a>
+            <a href="#contact" class="btn-primary px-6 py-2 rounded-full text-sm font-bold">預約諮詢</a>
         </div>
     </nav>
 
@@ -104,89 +104,119 @@
         
         <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
             <div data-aos="fade-right">
-                <div class="inline-block px-4 py-1 rounded-full bg-red-500/10 border border-red-500/20 text-red-500 text-xs font-bold mb-6 text-orange-400">
-                    MAC MINI HARDWARE INTEGRATION NOW AVAILABLE
+                <div class="inline-block px-4 py-1 rounded-full bg-red-500/10 border border-red-500/20 text-red-500 text-xs font-bold mb-6">
+                    INTEGRATED HARDWARE & SOFTWARE SOLUTION
                 </div>
                 <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
                     OpenCRAW <br> 
-                    <span class="text-gradient">龍蝦系統建置服務</span>
+                    <span class="text-gradient">軟硬體一體化服務</span>
                 </h1>
                 <p class="text-lg text-gray-400 mb-8 max-w-lg leading-relaxed">
-                    不再只是聊天，我們為您打造具備「自主行動力」與「高可用架構」的 AI 代理。
-                    搭載 <b>Gemini 3 Flash</b>、<b>gpt-oss-120b</b> 與 <b>Kimi k2.5</b> 多模型軍團，這才是真正的企業級智能助手。
+                    不再只是軟體。我們提供預載優化系統的 <b>Mac Mini</b> 專屬硬體，結合 <b>Gemini / GPT / Kimi</b> 多模型路由，打造買回家插電即用的「數位龍蝦大腦」。
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="#solutions" class="btn-primary px-8 py-4 rounded-xl text-center font-bold">查看規格方案</a>
-                    <a href="#hardware" class="px-8 py-4 rounded-xl border border-white/10 hover:bg-white/5 transition text-center font-bold">硬體加購</a>
+                    <a href="#solutions" class="btn-primary px-8 py-4 rounded-xl text-center font-bold">查看一體化方案</a>
+                    <a href="#features" class="px-8 py-4 rounded-xl border border-white/10 hover:bg-white/5 transition text-center font-bold">核心技術</a>
                 </div>
             </div>
             <div class="relative flex justify-center" data-aos="zoom-in">
                 <div class="floating relative z-10 text-center">
                     <div class="w-64 h-64 md:w-80 md:h-80 bg-gradient-to-br from-red-600 to-red-950 rounded-3xl rotate-12 flex flex-col items-center justify-center shadow-2xl overflow-hidden group border border-white/10">
+                        <i class="fab fa-apple text-7xl text-white/20 absolute top-4 right-4"></i>
                         <i class="fas fa-hand-holding-hand text-8xl text-white mb-4 group-hover:scale-110 transition duration-500"></i>
-                        <div class="text-white font-bold text-xl tracking-widest uppercase">Dual Agent HA</div>
+                        <div class="text-white font-bold text-xl tracking-widest uppercase">OpenCRAW HA</div>
                     </div>
-                </div>
-                <!-- Abstract decorations -->
-                <div class="absolute inset-0 flex items-center justify-center opacity-20">
-                    <div class="w-96 h-96 border border-red-500 rounded-full animate-ping"></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Hardware Section -->
-    <section id="hardware" class="py-24 bg-white/[0.01]">
+    <!-- Integrated Solutions -->
+    <section id="solutions" class="py-24 bg-white/[0.02]">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center mb-16" data-aos="fade-up">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">專屬硬體設備規格</h2>
-                <p class="text-gray-400">工欲善其事，必先利其器。我們為 OpenCRAW 挑選了最穩定的 Mac Mini 平台</p>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">全套一體化建置方案</h2>
+                <p class="text-gray-400">軟體建置費 + 專屬優化硬體，打造您的最強 AI 戰力</p>
             </div>
-            <div class="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-                <!-- Mac Mini M1 (小龍蝦) -->
-                <div class="card-glass p-10 rounded-3xl relative overflow-hidden group" data-aos="fade-right">
-                    <div class="absolute -right-10 -top-10 opacity-10 group-hover:opacity-20 transition duration-500">
-                        <i class="fab fa-apple text-[180px]"></i>
+            
+            <div class="grid lg:grid-cols-3 gap-8 items-stretch">
+                <!-- Economic (Little Lobster) -->
+                <div class="card-glass p-8 rounded-3xl flex flex-col border-white/5" data-aos="fade-up" data-aos-delay="100">
+                    <div class="hardware-spec-badge">小龍蝦 M1 版本</div>
+                    <h3 class="text-2xl font-bold mb-2">經濟版 一體化方案</h3>
+                    <div class="mb-6">
+                        <div class="text-4xl font-extrabold text-white">$14,500</div>
+                        <div class="text-xs text-gray-500 mt-1">(軟體 $5,000 + 硬體 $9,500)</div>
                     </div>
-                    <div class="inline-block px-3 py-1 rounded-md hardware-badge text-[10px] font-bold uppercase mb-4 tracking-wider">經濟型推薦</div>
-                    <h3 class="text-2xl font-bold mb-2">小龍蝦 (Mac Mini M1)</h3>
-                    <div class="text-4xl font-extrabold text-white mb-6">$9,500 <span class="text-sm text-gray-500 font-normal">/ 設備建置費</span></div>
-                    <ul class="space-y-4 text-gray-400 mb-8">
-                        <li class="flex items-center"><i class="fas fa-microchip text-red-500 mr-3"></i> Apple M1 晶片 (8 核心)</li>
-                        <li class="flex items-center"><i class="fas fa-memory text-red-500 mr-3"></i> 8GB 統一記憶體</li>
-                        <li class="flex items-center"><i class="fas fa-hdd text-red-500 mr-3"></i> 256GB 超高速 SSD</li>
-                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-3"></i> 預載 OpenCRAW 核心環境</li>
+                    <div class="bg-white/5 p-4 rounded-xl mb-6">
+                        <div class="text-xs font-bold text-red-400 mb-2 uppercase tracking-tighter">硬體規格：小龍蝦 (Mac Mini M1)</div>
+                        <p class="text-xs text-gray-400">Apple M1 / 8GB RAM / 256GB SSD</p>
+                        <p class="text-[10px] text-gray-500 mt-1 italic">適合：個人助理、基礎自動化、輕量使用</p>
+                    </div>
+                    <ul class="space-y-3 mb-8 text-gray-400 flex-grow text-sm">
+                        <li><i class="fas fa-check text-red-500 mr-2"></i> OpenCRAW 核心系統預載</li>
+                        <li><i class="fas fa-check text-red-500 mr-2"></i> Telegram 機器人對接</li>
+                        <li><i class="fas fa-check text-red-500 mr-2"></i> 基礎模型路由配置</li>
+                        <li><i class="fas fa-check text-red-500 mr-2"></i> 硬體到府/寄送即用</li>
                     </ul>
-                    <p class="text-sm text-red-400/80 font-medium italic">建議配對方案：經濟版 (Basic) / 商務版 (Business)</p>
+                    <a href="#contact" class="block w-full py-4 rounded-xl border border-white/10 hover:border-red-500 text-center font-bold transition">立即預購</a>
                 </div>
 
-                <!-- Mac Mini M2 (大龍蝦) -->
-                <div class="card-glass p-10 rounded-3xl relative overflow-hidden group border-red-500/30" data-aos="fade-left">
-                    <div class="absolute -right-10 -top-10 opacity-10 group-hover:opacity-20 transition duration-500">
-                        <i class="fab fa-apple text-[180px] text-red-500"></i>
+                <!-- Business (Medium/Big Lobster) -->
+                <div class="card-glass p-8 rounded-3xl border-red-500/50 bg-red-500/5 relative flex flex-col" data-aos="fade-up" data-aos-delay="200">
+                    <div class="absolute top-0 right-0 bg-red-500 text-white text-[10px] font-bold px-3 py-1 rounded-bl-xl rounded-tr-3xl uppercase tracking-widest">高性價比</div>
+                    <div class="hardware-spec-badge">小/大龍蝦 自選版本</div>
+                    <h3 class="text-2xl font-bold mb-2">商務版 一體化方案</h3>
+                    <div class="mb-6">
+                        <div class="text-4xl font-extrabold text-red-500">$21,500 <span class="text-sm font-normal text-gray-400">起</span></div>
+                        <div class="text-xs text-gray-500 mt-1">(軟體 $12,000 + 硬體自選)</div>
                     </div>
-                    <div class="inline-block px-3 py-1 rounded-md hardware-badge text-[10px] font-bold uppercase mb-4 tracking-wider bg-red-500/20">旗艦型推薦</div>
-                    <h3 class="text-2xl font-bold mb-2">大龍蝦 (Mac Mini M2)</h3>
-                    <div class="text-4xl font-extrabold text-red-500 mb-6">$13,000 <span class="text-sm text-gray-500 font-normal">/ 設備建置費</span></div>
-                    <ul class="space-y-4 text-gray-400 mb-8">
-                        <li class="flex items-center"><i class="fas fa-microchip text-red-500 mr-3"></i> Apple M2 晶片 (進階效能)</li>
-                        <li class="flex items-center"><i class="fas fa-memory text-red-500 mr-3"></i> 16GB 統一記憶體 (流暢多工)</li>
-                        <li class="flex items-center"><i class="fas fa-hdd text-red-500 mr-3"></i> 512GB 大容量儲存空間</li>
-                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-3"></i> 預載 HA 雙龍蝦備份機制</li>
+                    <div class="bg-red-500/10 p-4 rounded-xl mb-6 border border-red-500/20">
+                        <div class="text-xs font-bold text-red-400 mb-2 uppercase tracking-tighter">建議硬體：大龍蝦 (M2/16G/512G)</div>
+                        <p class="text-xs text-gray-300">Apple M2 / 16GB RAM / 512GB SSD</p>
+                        <p class="text-[10px] text-gray-400 mt-1 italic">適合：內容創作者、中量任務、多模型頻繁切換</p>
+                    </div>
+                    <ul class="space-y-3 mb-8 text-gray-300 flex-grow text-sm font-medium">
+                        <li><i class="fas fa-check text-red-500 mr-2"></i> <strong>TG + LINE OA 雙平台對接</strong></li>
+                        <li><i class="fas fa-check text-red-500 mr-2"></i> <strong>24/7 資訊情報爬蟲功能</strong></li>
+                        <li><i class="fas fa-check text-red-500 mr-2"></i> 模型配額自動監控與切換</li>
+                        <li><i class="fas fa-check text-red-500 mr-2"></i> 支援 MCP 遠端串聯擴充</li>
                     </ul>
-                    <p class="text-sm text-red-400/80 font-medium italic">建議配對方案：商務版 (Business) / 豪華版 (Premium)</p>
+                    <a href="#contact" class="btn-primary block w-full py-4 rounded-xl text-center font-bold">專業版部署</a>
+                </div>
+
+                <!-- Premium (Big Lobster HA) -->
+                <div class="card-glass p-8 rounded-3xl flex flex-col border-white/5" data-aos="fade-up" data-aos-delay="300">
+                    <div class="hardware-spec-badge">旗艦大龍蝦 M2 版本</div>
+                    <h3 class="text-2xl font-bold mb-2">豪華版 一體化方案</h3>
+                    <div class="mb-6">
+                        <div class="text-4xl font-extrabold text-white">$43,000</div>
+                        <div class="text-xs text-gray-500 mt-1">(軟體 $30,000 + 硬體 $13,000)</div>
+                    </div>
+                    <div class="bg-white/5 p-4 rounded-xl mb-6 border border-red-500/30 shadow-[0_0_15px_rgba(255,77,77,0.1)]">
+                        <div class="text-xs font-bold text-red-400 mb-2 uppercase tracking-tighter">必備硬體：旗艦大龍蝦 (M2)</div>
+                        <p class="text-xs text-gray-400">效能全開，支援雙 Agent 相互監控機制</p>
+                        <p class="text-[10px] text-red-500/80 mt-1 italic font-bold">強制要求：豪華版必須使用大龍蝦以確保 HA 穩定性</p>
+                    </div>
+                    <ul class="space-y-3 mb-8 text-gray-400 flex-grow text-sm">
+                        <li><i class="fas fa-check text-red-500 mr-2"></i> <strong>雙龍蝦 HA 高可用容錯架構</strong></li>
+                        <li><i class="fas fa-check text-red-500 mr-2"></i> <strong>每晚 9 點自動產出資產報告</strong></li>
+                        <li><i class="fas fa-check text-red-500 mr-2"></i> 極致多模型分流 (5+ 模型)</li>
+                        <li><i class="fas fa-check text-red-500 mr-2"></i> 一整年 VIP 技術管家服務</li>
+                    </ul>
+                    <a href="#contact" class="block w-full py-4 rounded-xl border border-red-500/50 hover:bg-red-500/10 text-center font-bold transition">聯絡顧問</a>
                 </div>
             </div>
-            <p class="text-center mt-12 text-gray-500 text-sm italic">* 以上硬體設備價格包含軟體初始化與專屬優化設定。</p>
+            <p class="text-center mt-12 text-gray-500 text-xs italic">* 以上價格包含硬體購入、系統預裝、安全加固與軟體建置。所有硬體享 Apple 原廠保固。</p>
         </div>
     </section>
 
     <!-- Core Features -->
-    <section id="features" class="py-24 bg-white/[0.02]">
+    <section id="features" class="py-24">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center mb-16" data-aos="fade-up">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">功能盤點與技術定義</h2>
-                <p class="text-gray-400">搭載多模型切換系統，實現「最快速度、最強邏輯、深度分析」的完美平衡</p>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">核心技術定義</h2>
+                <p class="text-gray-400">基於 Google DeepMind 技術框架，實現真正的「代理化」工作流</p>
             </div>
             <div class="grid md:grid-cols-3 gap-8">
                 <!-- Models -->
@@ -198,7 +228,7 @@
                         <span class="model-badge">Gemini 3 Flash</span>
                     </div>
                     <h3 class="text-xl font-bold mb-4 text-blue-400">日常瑣事與視覺辨識</h3>
-                    <p class="text-gray-400 leading-relaxed text-sm">自動派發處理日常雜務、提醒與圖片辨識。以極致的速度響應您的基礎需求。</p>
+                    <p class="text-gray-400 leading-relaxed text-sm">利用極致速度處理日常對話與截圖分析，是龍蝦系統中最敏捷的神經末梢。</p>
                 </div>
                 <div class="card-glass p-8 rounded-2xl" data-aos="fade-up" data-aos-delay="200">
                     <div class="flex justify-between items-start mb-6">
@@ -207,8 +237,8 @@
                         </div>
                         <span class="model-badge">gpt-oss-120b</span>
                     </div>
-                    <h3 class="text-xl font-bold mb-4 text-purple-400">深度邏輯與大規模代碼</h3>
-                    <p class="text-gray-400 leading-relaxed text-sm">自動調度 120B 開源最強戰力，處理商業策略分析與複雜程式碼撰寫任務。</p>
+                    <h3 class="text-xl font-bold mb-4 text-purple-400">深度邏輯與編程</h3>
+                    <p class="text-gray-400 leading-relaxed text-sm">調動 120B 等級最強邏輯核心，處理商業決策、代碼撰寫與複雜數據分析任務。</p>
                 </div>
                 <div class="card-glass p-8 rounded-2xl" data-aos="fade-up" data-aos-delay="300">
                     <div class="flex justify-between items-start mb-6">
@@ -217,353 +247,21 @@
                         </div>
                         <span class="model-badge">Kimi k2.5</span>
                     </div>
-                    <h3 class="text-xl font-bold mb-4 text-green-400">新聞式深度分析報告</h3>
-                    <p class="text-gray-400 leading-relaxed text-sm">負責專業情報總結與每晚自動結算，以新聞報導風格產出高質量的深度分析。</p>
-                </div>
-
-                <div class="card-glass p-8 rounded-2xl" data-aos="fade-up" data-aos-delay="400">
-                    <div class="w-12 h-12 bg-red-500/20 rounded-lg flex items-center justify-center mb-6">
-                        <i class="fas fa-dog text-red-500 text-xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-4">雙龍蝦高可用架構 (HA)</h3>
-                    <p class="text-gray-400 leading-relaxed text-sm">部署兩套獨立 Agent（主/備）。主端掛掉後，備用端（TG端）透過看門狗機制自動接手。</p>
-                </div>
-                <div class="card-glass p-8 rounded-2xl" data-aos="fade-up" data-aos-delay="500">
-                    <div class="w-12 h-12 bg-red-500/20 rounded-lg flex items-center justify-center mb-6">
-                        <i class="fas fa-calendar-check text-red-500 text-xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-4">每晚 9 點自動結算</h3>
-                    <p class="text-gray-400 leading-relaxed text-sm">定時彙整當日任務，生成總結並自動上傳 Google Drive，確保商務資產永遠留存。</p>
-                </div>
-                <div class="card-glass p-8 rounded-2xl" data-aos="fade-up" data-aos-delay="600">
-                    <div class="w-12 h-12 bg-red-500/20 rounded-lg flex items-center justify-center mb-6">
-                        <i class="fas fa-shield-alt text-red-500 text-xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-4">備份三部曲與資安</h3>
-                    <p class="text-gray-400 leading-relaxed text-sm">地端備份 + Google 雲端備份 + Git 版本控制。資安防護認證與防火牆深度調教。</p>
+                    <h3 class="text-xl font-bold mb-4 text-green-400">情報總結與報告</h3>
+                    <p class="text-gray-400 leading-relaxed text-sm">負責每晚的自動結算，將繁雜的資訊轉化為新聞報導風格的深度情報。專業級統整專家。</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Pricing Packages -->
-    <section id="solutions" class="py-24">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center mb-16" data-aos="fade-up">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">建置方案定價表</h2>
-                <p class="text-gray-400">根據您的應用規模，選擇最合適的龍蝦武裝 (不含硬體設備)</p>
-            </div>
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Basic -->
-                <div class="card-glass p-8 rounded-3xl flex flex-col" data-aos="fade-right">
-                    <h3 class="text-xl font-bold mb-2">經濟版 (Basic)</h3>
-                    <div class="text-3xl font-bold mb-4 text-white">$5,000 <span class="text-sm text-gray-500 font-normal">/ 一次性建置</span></div>
-                    <p class="text-gray-400 text-xs mb-6">適合個人體驗、輕量使用者</p>
-                    <ul class="space-y-3 mb-8 text-gray-400 flex-grow text-sm">
-                        <li><i class="fas fa-check text-red-500 mr-2"></i> OpenCRAW 核心系統安裝</li>
-                        <li><i class="fas fa-check text-red-500 mr-2"></i> Telegram 機器人對接</li>
-                        <li><i class="fas fa-check text-red-500 mr-2"></i> 1 個指定大語言模型對接</li>
-                        <li><i class="fas fa-check text-red-500 mr-2"></i> 基礎個人提醒設定</li>
-                        <li class="text-red-400/80"><i class="fas fa-laptop text-red-400/80 mr-2"></i> 建議硬體：小龍蝦 M1</li>
-                    </ul>
-                    <a href="#contact" class="block w-full py-3 rounded-xl border border-white/10 hover:border-red-500 text-center font-medium transition">立即預約</a>
-                </div>
-                
-                <!-- Business -->
-                <div class="card-glass p-8 rounded-3xl border-red-500/50 bg-red-500/5 relative flex flex-col" data-aos="fade-up">
-                    <div class="absolute top-0 right-0 bg-red-500 text-white text-[10px] font-bold px-3 py-1 rounded-bl-xl rounded-tr-3xl uppercase tracking-widest">最熱門</div>
-                    <h3 class="text-xl font-bold mb-2">商務版 (Business)</h3>
-                    <div class="text-3xl font-bold mb-4 text-red-500">$12,000 <span class="text-sm text-gray-500 font-normal">/ 全方位賦能</span></div>
-                    <p class="text-gray-400 text-xs mb-6">適合創作者、社群小編、SOHO族</p>
-                    <ul class="space-y-3 mb-8 text-gray-400 flex-grow text-sm">
-                        <li><i class="fas fa-check text-red-500 mr-2"></i> <strong>包含經濟版所有功能</strong></li>
-                        <li><i class="fas fa-check text-red-500 mr-2"></i> <strong>Telegram + LINE OA 雙對接</strong></li>
-                        <li><i class="fas fa-check text-red-500 mr-2"></i> 2 個模型配置 (Router 分流)</li>
-                        <li><i class="fas fa-check text-red-500 mr-2"></i> 資訊情報爬蟲 (TG/IG/Threads)</li>
-                        <li class="text-red-400/80"><i class="fas fa-laptop text-red-400/80 mr-2"></i> 建議硬體：小龍蝦 或 大龍蝦</li>
-                    </ul>
-                    <a href="#contact" class="btn-primary block w-full py-3 rounded-xl text-center font-bold">立即部署</a>
-                </div>
-                
-                <!-- Premium -->
-                <div class="card-glass p-8 rounded-3xl flex flex-col" data-aos="fade-left">
-                    <h3 class="text-xl font-bold mb-2">豪華版 (Premium)</h3>
-                    <div class="text-3xl font-bold mb-4 text-white">$30,000 <span class="text-sm text-gray-500 font-normal">/ 企業級穩定</span></div>
-                    <p class="text-gray-400 text-xs mb-6">適合企業主、重視穩定與全自動者</p>
-                    <ul class="space-y-3 mb-8 text-gray-400 flex-grow text-sm">
-                        <li><i class="fas fa-check text-red-500 mr-2"></i> <strong>包含商務版所有功能</strong></li>
-                        <li><i class="fas fa-check text-red-500 mr-2"></i> <strong>雙龍蝦 HA 高可用架構</strong></li>
-                        <li><i class="fas fa-check text-red-500 mr-2"></i> 5 個模型極致分流策略</li>
-                        <li><i class="fas fa-check text-red-500 mr-2"></i> <strong>每晚 9 點自動結算歸檔</strong></li>
-                        <li class="text-red-400/80"><i class="fas fa-laptop text-red-400/80 mr-2"></i> 建議硬體：大龍蝦 M2</li>
-                    </ul>
-                    <a href="#contact" class="block w-full py-3 rounded-xl border border-white/10 hover:border-red-500 text-center font-medium transition">聯絡顧問</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
+    <!-- FAQ Section (Truncated for space) -->
     <section id="faq" class="py-24 bg-white/[0.01]">
-        <div class="max-w-4xl mx-auto px-6">
-            <div class="text-center mb-16" data-aos="fade-up">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-red-500">常見問題 FAQ</h2>
-                <p class="text-gray-400">關於 OpenCRAW 的安裝、費用、安全與支援，我們整理了 33 項完整解答</p>
-            </div>
-
-            <div class="space-y-4">
-                <!-- 【基礎認識篇】 -->
-                <div class="mb-8">
-                    <h3 class="text-red-400 font-bold mb-4 px-4 border-l-4 border-red-500">【基礎認識篇】</h3>
-                    <div class="space-y-2">
-                        <details class="group border border-white/5 rounded-xl overflow-hidden bg-white/[0.02]">
-                            <summary class="flex justify-between items-center p-5 cursor-pointer hover:bg-white/[0.05] transition">
-                                <span class="font-bold text-sm md:text-base">Q1. OpenCRAW 是什麼？</span>
-                                <i class="fas fa-chevron-down text-xs group-open:rotate-180 transition"></i>
-                            </summary>
-                            <div class="p-5 text-gray-400 text-sm leading-relaxed border-t border-white/5">
-                                OpenCRAW（前身為 Clawdbot/Moltbot）是一個開源的 AI 助理框架，讓你可以在自己的電腦或雲端伺服器上運行 AI 助理，整合 Telegram、Discord、WhatsApp 等平台，自動化處理各種工作流程。
-                            </div>
-                        </details>
-                        <details class="group border border-white/5 rounded-xl overflow-hidden bg-white/[0.02]">
-                            <summary class="flex justify-between items-center p-5 cursor-pointer hover:bg-white/[0.05] transition">
-                                <span class="font-bold text-sm md:text-base">Q2. 跟 ChatGPT 有什麼不同？</span>
-                                <i class="fas fa-chevron-down text-xs group-open:rotate-180 transition"></i>
-                            </summary>
-                            <div class="p-5 text-gray-400 text-sm leading-relaxed border-t border-white/5">
-                                <b>ChatGPT:</b> 雲端服務，需要網路連線，資料儲存在 OpenAI 伺服器<br>
-                                <b>OpenCRAW:</b> 本地運行，資料存在你的電腦，隱私性更高，可客製化自動化流程
-                            </div>
-                        </details>
-                        <details class="group border border-white/5 rounded-xl overflow-hidden bg-white/[0.02]">
-                            <summary class="flex justify-between items-center p-5 cursor-pointer hover:bg-white/[0.05] transition">
-                                <span class="font-bold text-sm md:text-base">Q3. 我需要什麼技術基礎嗎？</span>
-                                <i class="fas fa-chevron-down text-xs group-open:rotate-180 transition"></i>
-                            </summary>
-                            <div class="p-5 text-gray-400 text-sm leading-relaxed border-t border-white/5">
-                                基礎安裝不需要！我會幫你處理所有技術細節。但進階客製化需要基本電腦操作能力。
-                            </div>
-                        </details>
-                    </div>
-                </div>
-
-                <!-- 【安裝流程篇】 -->
-                <div class="mb-8">
-                    <h3 class="text-red-400 font-bold mb-4 px-4 border-l-4 border-red-500">【安裝流程篇】</h3>
-                    <div class="space-y-2">
-                        <details class="group border border-white/5 rounded-xl overflow-hidden bg-white/[0.02]">
-                            <summary class="flex justify-between items-center p-5 cursor-pointer hover:bg-white/[0.05] transition">
-                                <span class="font-bold text-sm md:text-base">Q4. 安裝需要多久時間？</span>
-                                <i class="fas fa-chevron-down text-xs group-open:rotate-180 transition"></i>
-                            </summary>
-                            <div class="p-5 text-gray-400 text-sm leading-relaxed border-t border-white/5">
-                                基礎安裝：約 30-60 分鐘；進階設定：約 1-2 小時；客製化開發：依需求 1-7 天不等。
-                            </div>
-                        </details>
-                        <details class="group border border-white/5 rounded-xl overflow-hidden bg-white/[0.02]">
-                            <summary class="flex justify-between items-center p-5 cursor-pointer hover:bg-white/[0.05] transition">
-                                <span class="font-bold text-sm md:text-base">Q5. 我需要準備什麼？</span>
-                                <i class="fas fa-chevron-down text-xs group-open:rotate-180 transition"></i>
-                            </summary>
-                            <div class="p-5 text-gray-400 text-sm leading-relaxed border-t border-white/5">
-                                1. 電腦 (Mac/Win/Linux) 2. 穩定的網路 3. API Key (Gemini 免費版) 4. Telegram 帳號。
-                            </div>
-                        </details>
-                        <details class="group border border-white/5 rounded-xl overflow-hidden bg-white/[0.02]">
-                            <summary class="flex justify-between items-center p-5 cursor-pointer hover:bg-white/[0.05] transition">
-                                <span class="font-bold text-sm md:text-base">Q6. Windows 可以安裝嗎？</span>
-                                <i class="fas fa-chevron-down text-xs group-open:rotate-180 transition"></i>
-                            </summary>
-                            <div class="p-5 text-gray-400 text-sm leading-relaxed border-t border-white/5">
-                                可以！但建議使用 WSL2 或 Docker 來獲得最佳體驗。Mac 的安裝會更順暢。
-                            </div>
-                        </details>
-                        <details class="group border border-white/5 rounded-xl overflow-hidden bg-white/[0.02]">
-                            <summary class="flex justify-between items-center p-5 cursor-pointer hover:bg-white/[0.05] transition">
-                                <span class="font-bold text-sm md:text-base">Q7. 安裝過程中我需要在場嗎？</span>
-                                <i class="fas fa-chevron-down text-xs group-open:rotate-180 transition"></i>
-                            </summary>
-                            <div class="p-5 text-gray-400 text-sm leading-relaxed border-t border-white/5">
-                                建議在場！我會透過遠端協助工具（AnyDesk/TeamViewer）操作，你可以全程看到並學習。
-                            </div>
-                        </details>
-                    </div>
-                </div>
-
-                <!-- 【費用與付款篇】 -->
-                <div class="mb-8">
-                    <h3 class="text-red-400 font-bold mb-4 px-4 border-l-4 border-red-500">【費用與付款篇】</h3>
-                    <div class="space-y-2">
-                        <details class="group border border-white/5 rounded-xl overflow-hidden bg-white/[0.02]">
-                            <summary class="flex justify-between items-center p-5 cursor-pointer hover:bg-white/[0.05] transition">
-                                <span class="font-bold text-sm md:text-base">Q8. 除了安裝費，還有什麼額外成本？</span>
-                                <i class="fas fa-chevron-down text-xs group-open:rotate-180 transition"></i>
-                            </summary>
-                            <div class="p-5 text-gray-400 text-sm leading-relaxed border-t border-white/5">
-                                API 費用（依使用量）、雲端主機費（若需 24h 運行）、進階功能外掛費。
-                            </div>
-                        </details>
-                        <details class="group border border-white/5 rounded-xl overflow-hidden bg-white/[0.02]">
-                            <summary class="flex justify-between items-center p-5 cursor-pointer hover:bg-white/[0.05] transition">
-                                <span class="font-bold text-sm md:text-base">Q9. 可以分期付款嗎？</span>
-                                <i class="fas fa-chevron-down text-xs group-open:rotate-180 transition"></i>
-                            </summary>
-                            <div class="p-5 text-gray-400 text-sm leading-relaxed border-t border-white/5">
-                                基礎方案需全額付款。進階以上方案可談分期（首付 50%，完成後 50%）。
-                            </div>
-                        </details>
-                        <details class="group border border-white/5 rounded-xl overflow-hidden bg-white/[0.02]">
-                            <summary class="flex justify-between items-center p-5 cursor-pointer hover:bg-white/[0.05] transition">
-                                <span class="font-bold text-sm md:text-base">Q10. 有提供發票嗎？</span>
-                                <i class="fas fa-chevron-down text-xs group-open:rotate-180 transition"></i>
-                            </summary>
-                            <div class="p-5 text-gray-400 text-sm leading-relaxed border-t border-white/5">
-                                可以開立電子發票（個人或公司戶）。公司戶需另加 5% 稅金。
-                            </div>
-                        </details>
-                    </div>
-                </div>
-
-                <!-- 【技術支援篇】 -->
-                <div class="mb-8">
-                    <h3 class="text-red-400 font-bold mb-4 px-4 border-l-4 border-red-500">【技術支援篇】</h3>
-                    <div class="space-y-2">
-                        <details class="group border border-white/5 rounded-xl overflow-hidden bg-white/[0.02]">
-                            <summary class="flex justify-between items-center p-5 cursor-pointer hover:bg-white/[0.05] transition">
-                                <span class="font-bold text-sm md:text-base">Q11. 安裝後有保固嗎？</span>
-                                <i class="fas fa-chevron-down text-xs group-open:rotate-180 transition"></i>
-                            </summary>
-                            <div class="p-5 text-gray-400 text-sm leading-relaxed border-t border-white/5">
-                                基礎方案：7 天；商務方案：30 天；豪華方案：一整年 VIP 維護。
-                            </div>
-                        </details>
-                        <details class="group border border-white/5 rounded-xl overflow-hidden bg-white/[0.02]">
-                            <summary class="flex justify-between items-center p-5 cursor-pointer hover:bg-white/[0.05] transition">
-                                <span class="font-bold text-sm md:text-base">Q12. 之後遇到問題怎麼辦？</span>
-                                <i class="fas fa-chevron-down text-xs group-open:rotate-180 transition"></i>
-                            </summary>
-                            <div class="p-5 text-gray-400 text-sm leading-relaxed border-t border-white/5">
-                                保固期內免費處理。保固期外可單次付費支援（$500/次）或訂閱 VIP 維護方案。
-                            </div>
-                        </details>
-                        <details class="group border border-white/5 rounded-xl overflow-hidden bg-white/[0.02]">
-                            <summary class="flex justify-between items-center p-5 cursor-pointer hover:bg-white/[0.05] transition">
-                                <span class="font-bold text-sm md:text-base">Q13. 可以升級方案嗎？</span>
-                                <i class="fas fa-chevron-down text-xs group-open:rotate-180 transition"></i>
-                            </summary>
-                            <div class="p-5 text-gray-400 text-sm leading-relaxed border-t border-white/5">
-                                可以！補差價即可升級。例如基礎方案升級進階方案。
-                            </div>
-                        </details>
-                        <details class="group border border-white/5 rounded-xl overflow-hidden bg-white/[0.02]">
-                            <summary class="flex justify-between items-center p-5 cursor-pointer hover:bg-white/[0.05] transition">
-                                <span class="font-bold text-sm md:text-base">Q14. 如果不滿意可以退費嗎？</span>
-                                <i class="fas fa-chevron-down text-xs group-open:rotate-180 transition"></i>
-                            </summary>
-                            <div class="p-5 text-gray-400 text-sm leading-relaxed border-t border-white/5">
-                                安裝前全額退費；安裝中依比例退費；完成後因屬數位服務原則不退費，但會協助調整至滿意。
-                            </div>
-                        </details>
-                    </div>
-                </div>
-
-                <!-- 【功能與客製化篇】 -->
-                <div class="mb-8">
-                    <h3 class="text-red-400 font-bold mb-4 px-4 border-l-4 border-red-500">【功能與客製化篇】</h3>
-                    <div class="space-y-2">
-                        <details class="group border border-white/5 rounded-xl overflow-hidden bg-white/[0.02]">
-                            <summary class="flex justify-between items-center p-5 cursor-pointer hover:bg-white/[0.05] transition">
-                                <span class="font-bold text-sm md:text-base">Q15. 可以連接哪些平台？</span>
-                                <i class="fas fa-chevron-down text-xs group-open:rotate-180 transition"></i>
-                            </summary>
-                            <div class="p-5 text-gray-400 text-sm leading-relaxed border-t border-white/5">
-                                支援 Telegram、Discord、WhatsApp、Slack、iMessage、Signal 等。
-                            </div>
-                        </details>
-                        <details class="group border border-white/5 rounded-xl overflow-hidden bg-white/[0.02]">
-                            <summary class="flex justify-between items-center p-5 cursor-pointer hover:bg-white/[0.05] transition">
-                                <span class="font-bold text-sm md:text-base">Q16. 可以同時使用多個 AI 模型嗎？</span>
-                                <i class="fas fa-chevron-down text-xs group-open:rotate-180 transition"></i>
-                            </summary>
-                            <div class="p-5 text-gray-400 text-sm leading-relaxed border-t border-white/5">
-                                可以！我會幫你設定 /g3f, /k25, /thinking 等指令，讓系統依據任務性質自動切換。
-                            </div>
-                        </details>
-                        <details class="group border border-white/5 rounded-xl overflow-hidden bg-white/[0.02]">
-                            <summary class="flex justify-between items-center p-5 cursor-pointer hover:bg-white/[0.05] transition">
-                                <span class="font-bold text-sm md:text-base">Q17. 可以客製化自動化流程嗎？</span>
-                                <i class="fas fa-chevron-down text-xs group-open:rotate-180 transition"></i>
-                            </summary>
-                            <div class="p-5 text-gray-400 text-sm leading-relaxed border-t border-white/5">
-                                可以！如自動整理截圖、自動下載 YT 生成簡報、監控電商訂單等。
-                            </div>
-                        </details>
-                        <details class="group border border-white/5 rounded-xl overflow-hidden bg-white/[0.02]">
-                            <summary class="flex justify-between items-center p-5 cursor-pointer hover:bg-white/[0.05] transition">
-                                <span class="font-bold text-sm md:text-base">Q18. 資料安全嗎？</span>
-                                <i class="fas fa-chevron-down text-xs group-open:rotate-180 transition"></i>
-                            </summary>
-                            <div class="p-5 text-gray-400 text-sm leading-relaxed border-t border-white/5">
-                                資料儲存在本地，API Key 絕不外洩，可設定防火牆與權限控管。
-                            </div>
-                        </details>
-                    </div>
-                </div>
-
-                <!-- 更多問答 -->
-                <details class="group border border-white/5 rounded-xl overflow-hidden bg-red-500/5">
-                    <summary class="flex justify-between items-center p-5 cursor-pointer hover:bg-white/[0.05] transition">
-                        <span class="font-bold text-red-400">點擊展開其餘 15 項進階問答（Q19 - Q33）</span>
-                        <i class="fas fa-chevron-down text-xs group-open:rotate-180 transition text-red-400"></i>
-                    </summary>
-                    <div class="p-5 space-y-6 border-t border-white/5 text-gray-400 text-sm leading-relaxed">
-                        <div>
-                            <strong class="text-white">Q19. 安裝後電腦會變慢嗎？</strong><br>資源佔用小，但建議 8GB 記憶體與 SSD 硬碟。
-                        </div>
-                        <div>
-                            <strong class="text-white">Q20. 可以多人共用嗎？</strong><br>技術上可以，但建議獨立安裝以確保隱私。
-                        </div>
-                        <div>
-                            <strong class="text-white">Q21. 手機可以使用嗎？</strong><br>手機透過 TG 互動，安裝需在電腦上。
-                        </div>
-                        <div>
-                            <strong class="text-white">Q22. 如果電腦重開機怎麼辦？</strong><br>我會幫你設定開機自動啟動。
-                        </div>
-                        <div>
-                            <strong class="text-white">Q23. 可以搬到別台電腦嗎？</strong><br>提供備份還原教學或加購遷移服務。
-                        </div>
-                        <div>
-                            <strong class="text-white">Q24. 什麼是「第二大腦」？</strong><br>自動歸檔截圖、網頁、筆記的 AI 知識管理系統。
-                        </div>
-                        <div>
-                            <strong class="text-white">Q25. 可以串接蝦皮 API 嗎？</strong><br>可以！包含訂單抓取、出貨通知與銷售分析。
-                        </div>
-                        <div>
-                            <strong class="text-white">Q26. 需要學程式嗎？</strong><br>基本使用不需要，進階客製化才需要概念。
-                        </div>
-                        <div>
-                            <strong class="text-white">Q27. 可以商業使用嗎？</strong><br>開源軟體商業使用完全合法。
-                        </div>
-                        <div>
-                            <strong class="text-white">Q28. 如果服務商消失了怎麼辦？</strong><br>提供完整文件，程式碼開源可由他人接手。
-                        </div>
-                        <div>
-                            <strong class="text-white">Q29. 如果 OpenCRAW 停止更新？</strong><br>已裝版本可續用，或遷移到 n8n 等平台。
-                        </div>
-                        <div>
-                            <strong class="text-white">Q30. 遇到 Bug 怎麼辦？</strong><br>保固期內聯絡我，或參考 GitHub Issues 與社群。
-                        </div>
-                        <div>
-                            <strong class="text-white">Q31. 如何開始？</strong><br>私訊諮詢 → 確認方案 → 付款預約 → 遠端安裝 → 驗收。
-                        </div>
-                        <div>
-                            <strong class="text-white">Q32. 安裝時間？</strong><br>平日晚上或週末全天，企業方案可配合上班。
-                        </div>
-                        <div>
-                            <strong class="text-white">Q33. 付款方式？</strong><br>轉帳、LINE Pay、街口、蝦皮下單（刷卡需手續費）。
-                        </div>
-                    </div>
-                </details>
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-8 text-red-500">常見問題 FAQ</h2>
+            <div class="card-glass p-12 rounded-3xl">
+                <p class="text-gray-300 mb-8">「我需要自己買電腦嗎？」、「Windows 可以裝嗎？」、「資料會外流嗎？」</p>
+                <p class="text-gray-400 text-sm mb-8 leading-relaxed">我們整理了 33 項專業解答，涵蓋硬體規格、API 費用與安全性維護。</p>
+                <a href="https://github.com/gaskhuang/openclaw-service" class="btn-primary px-8 py-3 rounded-xl font-bold inline-block">完整問答手冊</a>
             </div>
         </div>
     </section>
@@ -575,7 +273,7 @@
                 <i class="fas fa-hand-holding-hand text-red-500 text-xl lobster-icon"></i>
                 <span class="text-lg font-bold tracking-wider outfit">OpenCRAW <span class="text-red-500">Intelligence</span></span>
             </div>
-            <p class="text-gray-500 text-sm">© 2026 G大 AI 助理團隊 | 打造具備「自主性」的下一代數位勞動力</p>
+            <p class="text-gray-500 text-xs">© 2026 G大 AI 戰略團隊 | 提供一站式地端 AI 代理與硬體一體化解決方案</p>
         </div>
     </footer>
 
