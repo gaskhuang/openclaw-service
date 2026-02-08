@@ -69,6 +69,11 @@
         }
         details > summary { list-style: none; }
         details > summary::-webkit-details-marker { display: none; }
+        .hardware-badge {
+            background: linear-gradient(135deg, #ff4d4d20, #ff4d4d40);
+            border: 1px solid var(--lobster-red);
+            color: var(--lobster-red);
+        }
     </style>
 </head>
 <body>
@@ -81,6 +86,7 @@
                 <span class="text-xl font-bold tracking-wider outfit">OpenCRAW <span class="text-red-500">Intelligence</span></span>
             </div>
             <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#hardware" class="hover:text-red-500 transition">硬體設備</a>
                 <a href="#features" class="hover:text-red-500 transition">功能盤點</a>
                 <a href="#solutions" class="hover:text-red-500 transition">定價方案</a>
                 <a href="#faq" class="hover:text-red-500 transition">常見問題</a>
@@ -98,8 +104,8 @@
         
         <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
             <div data-aos="fade-right">
-                <div class="inline-block px-4 py-1 rounded-full bg-red-500/10 border border-red-500/20 text-red-500 text-xs font-bold mb-6">
-                    DUAL-AGENT HIGH AVAILABILITY SYSTEM
+                <div class="inline-block px-4 py-1 rounded-full bg-red-500/10 border border-red-500/20 text-red-500 text-xs font-bold mb-6 text-orange-400">
+                    MAC MINI HARDWARE INTEGRATION NOW AVAILABLE
                 </div>
                 <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
                     OpenCRAW <br> 
@@ -111,7 +117,7 @@
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
                     <a href="#solutions" class="btn-primary px-8 py-4 rounded-xl text-center font-bold">查看規格方案</a>
-                    <a href="#faq" class="px-8 py-4 rounded-xl border border-white/10 hover:bg-white/5 transition text-center font-bold">完整 FAQ</a>
+                    <a href="#hardware" class="px-8 py-4 rounded-xl border border-white/10 hover:bg-white/5 transition text-center font-bold">硬體加購</a>
                 </div>
             </div>
             <div class="relative flex justify-center" data-aos="zoom-in">
@@ -126,6 +132,52 @@
                     <div class="w-96 h-96 border border-red-500 rounded-full animate-ping"></div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Hardware Section -->
+    <section id="hardware" class="py-24 bg-white/[0.01]">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">專屬硬體設備規格</h2>
+                <p class="text-gray-400">工欲善其事，必先利其器。我們為 OpenCRAW 挑選了最穩定的 Mac Mini 平台</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+                <!-- Mac Mini M1 (小龍蝦) -->
+                <div class="card-glass p-10 rounded-3xl relative overflow-hidden group" data-aos="fade-right">
+                    <div class="absolute -right-10 -top-10 opacity-10 group-hover:opacity-20 transition duration-500">
+                        <i class="fab fa-apple text-[180px]"></i>
+                    </div>
+                    <div class="inline-block px-3 py-1 rounded-md hardware-badge text-[10px] font-bold uppercase mb-4 tracking-wider">經濟型推薦</div>
+                    <h3 class="text-2xl font-bold mb-2">小龍蝦 (Mac Mini M1)</h3>
+                    <div class="text-4xl font-extrabold text-white mb-6">$9,500 <span class="text-sm text-gray-500 font-normal">/ 設備建置費</span></div>
+                    <ul class="space-y-4 text-gray-400 mb-8">
+                        <li class="flex items-center"><i class="fas fa-microchip text-red-500 mr-3"></i> Apple M1 晶片 (8 核心)</li>
+                        <li class="flex items-center"><i class="fas fa-memory text-red-500 mr-3"></i> 8GB 統一記憶體</li>
+                        <li class="flex items-center"><i class="fas fa-hdd text-red-500 mr-3"></i> 256GB 超高速 SSD</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-3"></i> 預載 OpenCRAW 核心環境</li>
+                    </ul>
+                    <p class="text-sm text-red-400/80 font-medium italic">建議配對方案：經濟版 (Basic) / 商務版 (Business)</p>
+                </div>
+
+                <!-- Mac Mini M2 (大龍蝦) -->
+                <div class="card-glass p-10 rounded-3xl relative overflow-hidden group border-red-500/30" data-aos="fade-left">
+                    <div class="absolute -right-10 -top-10 opacity-10 group-hover:opacity-20 transition duration-500">
+                        <i class="fab fa-apple text-[180px] text-red-500"></i>
+                    </div>
+                    <div class="inline-block px-3 py-1 rounded-md hardware-badge text-[10px] font-bold uppercase mb-4 tracking-wider bg-red-500/20">旗艦型推薦</div>
+                    <h3 class="text-2xl font-bold mb-2">大龍蝦 (Mac Mini M2)</h3>
+                    <div class="text-4xl font-extrabold text-red-500 mb-6">$13,000 <span class="text-sm text-gray-500 font-normal">/ 設備建置費</span></div>
+                    <ul class="space-y-4 text-gray-400 mb-8">
+                        <li class="flex items-center"><i class="fas fa-microchip text-red-500 mr-3"></i> Apple M2 晶片 (進階效能)</li>
+                        <li class="flex items-center"><i class="fas fa-memory text-red-500 mr-3"></i> 16GB 統一記憶體 (流暢多工)</li>
+                        <li class="flex items-center"><i class="fas fa-hdd text-red-500 mr-3"></i> 512GB 大容量儲存空間</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-3"></i> 預載 HA 雙龍蝦備份機制</li>
+                    </ul>
+                    <p class="text-sm text-red-400/80 font-medium italic">建議配對方案：商務版 (Business) / 豪華版 (Premium)</p>
+                </div>
+            </div>
+            <p class="text-center mt-12 text-gray-500 text-sm italic">* 以上硬體設備價格包含軟體初始化與專屬優化設定。</p>
         </div>
     </section>
 
@@ -198,8 +250,8 @@
     <section id="solutions" class="py-24">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center mb-16" data-aos="fade-up">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">方案定價表</h2>
-                <p class="text-gray-400">根據您的應用規模，選擇最合適的龍蝦武裝</p>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">建置方案定價表</h2>
+                <p class="text-gray-400">根據您的應用規模，選擇最合適的龍蝦武裝 (不含硬體設備)</p>
             </div>
             <div class="grid md:grid-cols-3 gap-8">
                 <!-- Basic -->
@@ -212,7 +264,7 @@
                         <li><i class="fas fa-check text-red-500 mr-2"></i> Telegram 機器人對接</li>
                         <li><i class="fas fa-check text-red-500 mr-2"></i> 1 個指定大語言模型對接</li>
                         <li><i class="fas fa-check text-red-500 mr-2"></i> 基礎個人提醒設定</li>
-                        <li><i class="fas fa-minus text-gray-600 mr-2"></i> 無爬蟲與自動化功能</li>
+                        <li class="text-red-400/80"><i class="fas fa-laptop text-red-400/80 mr-2"></i> 建議硬體：小龍蝦 M1</li>
                     </ul>
                     <a href="#contact" class="block w-full py-3 rounded-xl border border-white/10 hover:border-red-500 text-center font-medium transition">立即預約</a>
                 </div>
@@ -228,8 +280,7 @@
                         <li><i class="fas fa-check text-red-500 mr-2"></i> <strong>Telegram + LINE OA 雙對接</strong></li>
                         <li><i class="fas fa-check text-red-500 mr-2"></i> 2 個模型配置 (Router 分流)</li>
                         <li><i class="fas fa-check text-red-500 mr-2"></i> 資訊情報爬蟲 (TG/IG/Threads)</li>
-                        <li><i class="fas fa-check text-red-500 mr-2"></i> 支援 MCP 系統安裝</li>
-                        <li><i class="fas fa-check text-red-500 mr-2"></i> 個人資訊 + 工作狀態看板</li>
+                        <li class="text-red-400/80"><i class="fas fa-laptop text-red-400/80 mr-2"></i> 建議硬體：小龍蝦 或 大龍蝦</li>
                     </ul>
                     <a href="#contact" class="btn-primary block w-full py-3 rounded-xl text-center font-bold">立即部署</a>
                 </div>
@@ -244,8 +295,7 @@
                         <li><i class="fas fa-check text-red-500 mr-2"></i> <strong>雙龍蝦 HA 高可用架構</strong></li>
                         <li><i class="fas fa-check text-red-500 mr-2"></i> 5 個模型極致分流策略</li>
                         <li><i class="fas fa-check text-red-500 mr-2"></i> <strong>每晚 9 點自動結算歸檔</strong></li>
-                        <li><i class="fas fa-check text-red-500 mr-2"></i> Google / Git 異地雙備份</li>
-                        <li><i class="fas fa-check text-red-500 mr-2"></i> 資安防護調教 + 一年維護</li>
+                        <li class="text-red-400/80"><i class="fas fa-laptop text-red-400/80 mr-2"></i> 建議硬體：大龍蝦 M2</li>
                     </ul>
                     <a href="#contact" class="block w-full py-3 rounded-xl border border-white/10 hover:border-red-500 text-center font-medium transition">聯絡顧問</a>
                 </div>
@@ -384,7 +434,7 @@
                                 <i class="fas fa-chevron-down text-xs group-open:rotate-180 transition"></i>
                             </summary>
                             <div class="p-5 text-gray-400 text-sm leading-relaxed border-t border-white/5">
-                                基礎方案：7 天；商務方案：30 天；豪華方案：90 天技術支援。
+                                基礎方案：7 天；商務方案：30 天；豪華方案：一整年 VIP 維護。
                             </div>
                         </details>
                         <details class="group border border-white/5 rounded-xl overflow-hidden bg-white/[0.02]">
