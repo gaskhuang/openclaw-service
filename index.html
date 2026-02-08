@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OpenCRAW 龍蝦系統建置服務 - 智能情報與高可用解決解決方案</title>
+    <title>OpenCRAW 龍蝦系統建置服務 - 智能情報與高可用解決方案</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -67,6 +67,8 @@
             font-size: 0.7rem;
             font-weight: 600;
         }
+        details > summary { list-style: none; }
+        details > summary::-webkit-details-marker { display: none; }
     </style>
 </head>
 <body>
@@ -81,7 +83,6 @@
             <div class="hidden md:flex space-x-8 text-sm font-medium">
                 <a href="#features" class="hover:text-red-500 transition">功能盤點</a>
                 <a href="#solutions" class="hover:text-red-500 transition">定價方案</a>
-                <a href="#addons" class="hover:text-red-500 transition">加購項目</a>
                 <a href="#faq" class="hover:text-red-500 transition">常見問題</a>
             </div>
             <a href="#contact" class="btn-primary px-6 py-2 rounded-full text-sm font-bold">立即諮詢</a>
@@ -110,7 +111,7 @@
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
                     <a href="#solutions" class="btn-primary px-8 py-4 rounded-xl text-center font-bold">查看規格方案</a>
-                    <a href="#features" class="px-8 py-4 rounded-xl border border-white/10 hover:bg-white/5 transition text-center font-bold">功能詳解</a>
+                    <a href="#faq" class="px-8 py-4 rounded-xl border border-white/10 hover:bg-white/5 transition text-center font-bold">完整 FAQ</a>
                 </div>
             </div>
             <div class="relative flex justify-center" data-aos="zoom-in">
@@ -136,7 +137,7 @@
                 <p class="text-gray-400">搭載多模型切換系統，實現「最快速度、最強邏輯、深度分析」的完美平衡</p>
             </div>
             <div class="grid md:grid-cols-3 gap-8">
-                <!-- Gemini -->
+                <!-- Models -->
                 <div class="card-glass p-8 rounded-2xl" data-aos="fade-up" data-aos-delay="100">
                     <div class="flex justify-between items-start mb-6">
                         <div class="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center">
@@ -147,7 +148,6 @@
                     <h3 class="text-xl font-bold mb-4 text-blue-400">日常瑣事與視覺辨識</h3>
                     <p class="text-gray-400 leading-relaxed text-sm">自動派發處理日常雜務、提醒與圖片辨識。以極致的速度響應您的基礎需求。</p>
                 </div>
-                <!-- GPT-OSS -->
                 <div class="card-glass p-8 rounded-2xl" data-aos="fade-up" data-aos-delay="200">
                     <div class="flex justify-between items-start mb-6">
                         <div class="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center">
@@ -158,7 +158,6 @@
                     <h3 class="text-xl font-bold mb-4 text-purple-400">深度邏輯與大規模代碼</h3>
                     <p class="text-gray-400 leading-relaxed text-sm">自動調度 120B 開源最強戰力，處理商業策略分析與複雜程式碼撰寫任務。</p>
                 </div>
-                <!-- Kimi -->
                 <div class="card-glass p-8 rounded-2xl" data-aos="fade-up" data-aos-delay="300">
                     <div class="flex justify-between items-start mb-6">
                         <div class="w-12 h-12 bg-green-500/20 rounded-lg flex items-center justify-center">
@@ -254,24 +253,267 @@
         </div>
     </section>
 
-    <!-- Add-ons -->
-    <section id="addons" class="py-24 bg-white/[0.02]">
-        <div class="max-w-7xl mx-auto px-6">
+    <!-- FAQ Section -->
+    <section id="faq" class="py-24 bg-white/[0.01]">
+        <div class="max-w-4xl mx-auto px-6">
             <div class="text-center mb-16" data-aos="fade-up">
-                <h2 class="text-2xl md:text-3xl font-bold mb-4 text-red-400">額外加購項目 (Add-ons)</h2>
-                <p class="text-gray-400">進階功能與維運支持</p>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-red-500">常見問題 FAQ</h2>
+                <p class="text-gray-400">關於 OpenCRAW 的安裝、費用、安全與支援，我們整理了 33 項完整解答</p>
             </div>
-            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
-                <div class="card-glass p-8 rounded-2xl border-white/5">
-                    <h4 class="text-lg font-bold mb-2">自動圖文行銷系統</h4>
-                    <div class="text-xl font-bold text-red-500 mb-4">$3,200 <span class="text-xs text-gray-500">/ 月</span></div>
-                    <p class="text-sm text-gray-400 mb-4">AI 自動撰寫貼文、生成配圖、自動發佈至 IG/FB/TG。包含監控與 API 維護。</p>
+
+            <div class="space-y-4">
+                <!-- 【基礎認識篇】 -->
+                <div class="mb-8">
+                    <h3 class="text-red-400 font-bold mb-4 px-4 border-l-4 border-red-500">【基礎認識篇】</h3>
+                    <div class="space-y-2">
+                        <details class="group border border-white/5 rounded-xl overflow-hidden bg-white/[0.02]">
+                            <summary class="flex justify-between items-center p-5 cursor-pointer hover:bg-white/[0.05] transition">
+                                <span class="font-bold text-sm md:text-base">Q1. OpenCRAW 是什麼？</span>
+                                <i class="fas fa-chevron-down text-xs group-open:rotate-180 transition"></i>
+                            </summary>
+                            <div class="p-5 text-gray-400 text-sm leading-relaxed border-t border-white/5">
+                                OpenCRAW（前身為 Clawdbot/Moltbot）是一個開源的 AI 助理框架，讓你可以在自己的電腦或雲端伺服器上運行 AI 助理，整合 Telegram、Discord、WhatsApp 等平台，自動化處理各種工作流程。
+                            </div>
+                        </details>
+                        <details class="group border border-white/5 rounded-xl overflow-hidden bg-white/[0.02]">
+                            <summary class="flex justify-between items-center p-5 cursor-pointer hover:bg-white/[0.05] transition">
+                                <span class="font-bold text-sm md:text-base">Q2. 跟 ChatGPT 有什麼不同？</span>
+                                <i class="fas fa-chevron-down text-xs group-open:rotate-180 transition"></i>
+                            </summary>
+                            <div class="p-5 text-gray-400 text-sm leading-relaxed border-t border-white/5">
+                                <b>ChatGPT:</b> 雲端服務，需要網路連線，資料儲存在 OpenAI 伺服器<br>
+                                <b>OpenCRAW:</b> 本地運行，資料存在你的電腦，隱私性更高，可客製化自動化流程
+                            </div>
+                        </details>
+                        <details class="group border border-white/5 rounded-xl overflow-hidden bg-white/[0.02]">
+                            <summary class="flex justify-between items-center p-5 cursor-pointer hover:bg-white/[0.05] transition">
+                                <span class="font-bold text-sm md:text-base">Q3. 我需要什麼技術基礎嗎？</span>
+                                <i class="fas fa-chevron-down text-xs group-open:rotate-180 transition"></i>
+                            </summary>
+                            <div class="p-5 text-gray-400 text-sm leading-relaxed border-t border-white/5">
+                                基礎安裝不需要！我會幫你處理所有技術細節。但進階客製化需要基本電腦操作能力。
+                            </div>
+                        </details>
+                    </div>
                 </div>
-                <div class="card-glass p-8 rounded-2xl border-white/5">
-                    <h4 class="text-lg font-bold mb-2">設備與運作支持</h4>
-                    <div class="text-xl font-bold text-red-500 mb-4">實報實銷</div>
-                    <p class="text-sm text-gray-400 mb-4">包含 VPS 主機費（GCP/AWS/Linode）或實體主機購買。進階資安/特殊架構調教依工時報價。</p>
+
+                <!-- 【安裝流程篇】 -->
+                <div class="mb-8">
+                    <h3 class="text-red-400 font-bold mb-4 px-4 border-l-4 border-red-500">【安裝流程篇】</h3>
+                    <div class="space-y-2">
+                        <details class="group border border-white/5 rounded-xl overflow-hidden bg-white/[0.02]">
+                            <summary class="flex justify-between items-center p-5 cursor-pointer hover:bg-white/[0.05] transition">
+                                <span class="font-bold text-sm md:text-base">Q4. 安裝需要多久時間？</span>
+                                <i class="fas fa-chevron-down text-xs group-open:rotate-180 transition"></i>
+                            </summary>
+                            <div class="p-5 text-gray-400 text-sm leading-relaxed border-t border-white/5">
+                                基礎安裝：約 30-60 分鐘；進階設定：約 1-2 小時；客製化開發：依需求 1-7 天不等。
+                            </div>
+                        </details>
+                        <details class="group border border-white/5 rounded-xl overflow-hidden bg-white/[0.02]">
+                            <summary class="flex justify-between items-center p-5 cursor-pointer hover:bg-white/[0.05] transition">
+                                <span class="font-bold text-sm md:text-base">Q5. 我需要準備什麼？</span>
+                                <i class="fas fa-chevron-down text-xs group-open:rotate-180 transition"></i>
+                            </summary>
+                            <div class="p-5 text-gray-400 text-sm leading-relaxed border-t border-white/5">
+                                1. 電腦 (Mac/Win/Linux) 2. 穩定的網路 3. API Key (Gemini 免費版) 4. Telegram 帳號。
+                            </div>
+                        </details>
+                        <details class="group border border-white/5 rounded-xl overflow-hidden bg-white/[0.02]">
+                            <summary class="flex justify-between items-center p-5 cursor-pointer hover:bg-white/[0.05] transition">
+                                <span class="font-bold text-sm md:text-base">Q6. Windows 可以安裝嗎？</span>
+                                <i class="fas fa-chevron-down text-xs group-open:rotate-180 transition"></i>
+                            </summary>
+                            <div class="p-5 text-gray-400 text-sm leading-relaxed border-t border-white/5">
+                                可以！但建議使用 WSL2 或 Docker 來獲得最佳體驗。Mac 的安裝會更順暢。
+                            </div>
+                        </details>
+                        <details class="group border border-white/5 rounded-xl overflow-hidden bg-white/[0.02]">
+                            <summary class="flex justify-between items-center p-5 cursor-pointer hover:bg-white/[0.05] transition">
+                                <span class="font-bold text-sm md:text-base">Q7. 安裝過程中我需要在場嗎？</span>
+                                <i class="fas fa-chevron-down text-xs group-open:rotate-180 transition"></i>
+                            </summary>
+                            <div class="p-5 text-gray-400 text-sm leading-relaxed border-t border-white/5">
+                                建議在場！我會透過遠端協助工具（AnyDesk/TeamViewer）操作，你可以全程看到並學習。
+                            </div>
+                        </details>
+                    </div>
                 </div>
+
+                <!-- 【費用與付款篇】 -->
+                <div class="mb-8">
+                    <h3 class="text-red-400 font-bold mb-4 px-4 border-l-4 border-red-500">【費用與付款篇】</h3>
+                    <div class="space-y-2">
+                        <details class="group border border-white/5 rounded-xl overflow-hidden bg-white/[0.02]">
+                            <summary class="flex justify-between items-center p-5 cursor-pointer hover:bg-white/[0.05] transition">
+                                <span class="font-bold text-sm md:text-base">Q8. 除了安裝費，還有什麼額外成本？</span>
+                                <i class="fas fa-chevron-down text-xs group-open:rotate-180 transition"></i>
+                            </summary>
+                            <div class="p-5 text-gray-400 text-sm leading-relaxed border-t border-white/5">
+                                API 費用（依使用量）、雲端主機費（若需 24h 運行）、進階功能外掛費。
+                            </div>
+                        </details>
+                        <details class="group border border-white/5 rounded-xl overflow-hidden bg-white/[0.02]">
+                            <summary class="flex justify-between items-center p-5 cursor-pointer hover:bg-white/[0.05] transition">
+                                <span class="font-bold text-sm md:text-base">Q9. 可以分期付款嗎？</span>
+                                <i class="fas fa-chevron-down text-xs group-open:rotate-180 transition"></i>
+                            </summary>
+                            <div class="p-5 text-gray-400 text-sm leading-relaxed border-t border-white/5">
+                                基礎方案需全額付款。進階以上方案可談分期（首付 50%，完成後 50%）。
+                            </div>
+                        </details>
+                        <details class="group border border-white/5 rounded-xl overflow-hidden bg-white/[0.02]">
+                            <summary class="flex justify-between items-center p-5 cursor-pointer hover:bg-white/[0.05] transition">
+                                <span class="font-bold text-sm md:text-base">Q10. 有提供發票嗎？</span>
+                                <i class="fas fa-chevron-down text-xs group-open:rotate-180 transition"></i>
+                            </summary>
+                            <div class="p-5 text-gray-400 text-sm leading-relaxed border-t border-white/5">
+                                可以開立電子發票（個人或公司戶）。公司戶需另加 5% 稅金。
+                            </div>
+                        </details>
+                    </div>
+                </div>
+
+                <!-- 【技術支援篇】 -->
+                <div class="mb-8">
+                    <h3 class="text-red-400 font-bold mb-4 px-4 border-l-4 border-red-500">【技術支援篇】</h3>
+                    <div class="space-y-2">
+                        <details class="group border border-white/5 rounded-xl overflow-hidden bg-white/[0.02]">
+                            <summary class="flex justify-between items-center p-5 cursor-pointer hover:bg-white/[0.05] transition">
+                                <span class="font-bold text-sm md:text-base">Q11. 安裝後有保固嗎？</span>
+                                <i class="fas fa-chevron-down text-xs group-open:rotate-180 transition"></i>
+                            </summary>
+                            <div class="p-5 text-gray-400 text-sm leading-relaxed border-t border-white/5">
+                                基礎方案：7 天；商務方案：30 天；豪華方案：90 天技術支援。
+                            </div>
+                        </details>
+                        <details class="group border border-white/5 rounded-xl overflow-hidden bg-white/[0.02]">
+                            <summary class="flex justify-between items-center p-5 cursor-pointer hover:bg-white/[0.05] transition">
+                                <span class="font-bold text-sm md:text-base">Q12. 之後遇到問題怎麼辦？</span>
+                                <i class="fas fa-chevron-down text-xs group-open:rotate-180 transition"></i>
+                            </summary>
+                            <div class="p-5 text-gray-400 text-sm leading-relaxed border-t border-white/5">
+                                保固期內免費處理。保固期外可單次付費支援（$500/次）或訂閱 VIP 維護方案。
+                            </div>
+                        </details>
+                        <details class="group border border-white/5 rounded-xl overflow-hidden bg-white/[0.02]">
+                            <summary class="flex justify-between items-center p-5 cursor-pointer hover:bg-white/[0.05] transition">
+                                <span class="font-bold text-sm md:text-base">Q13. 可以升級方案嗎？</span>
+                                <i class="fas fa-chevron-down text-xs group-open:rotate-180 transition"></i>
+                            </summary>
+                            <div class="p-5 text-gray-400 text-sm leading-relaxed border-t border-white/5">
+                                可以！補差價即可升級。例如基礎方案升級進階方案。
+                            </div>
+                        </details>
+                        <details class="group border border-white/5 rounded-xl overflow-hidden bg-white/[0.02]">
+                            <summary class="flex justify-between items-center p-5 cursor-pointer hover:bg-white/[0.05] transition">
+                                <span class="font-bold text-sm md:text-base">Q14. 如果不滿意可以退費嗎？</span>
+                                <i class="fas fa-chevron-down text-xs group-open:rotate-180 transition"></i>
+                            </summary>
+                            <div class="p-5 text-gray-400 text-sm leading-relaxed border-t border-white/5">
+                                安裝前全額退費；安裝中依比例退費；完成後因屬數位服務原則不退費，但會協助調整至滿意。
+                            </div>
+                        </details>
+                    </div>
+                </div>
+
+                <!-- 【功能與客製化篇】 -->
+                <div class="mb-8">
+                    <h3 class="text-red-400 font-bold mb-4 px-4 border-l-4 border-red-500">【功能與客製化篇】</h3>
+                    <div class="space-y-2">
+                        <details class="group border border-white/5 rounded-xl overflow-hidden bg-white/[0.02]">
+                            <summary class="flex justify-between items-center p-5 cursor-pointer hover:bg-white/[0.05] transition">
+                                <span class="font-bold text-sm md:text-base">Q15. 可以連接哪些平台？</span>
+                                <i class="fas fa-chevron-down text-xs group-open:rotate-180 transition"></i>
+                            </summary>
+                            <div class="p-5 text-gray-400 text-sm leading-relaxed border-t border-white/5">
+                                支援 Telegram、Discord、WhatsApp、Slack、iMessage、Signal 等。
+                            </div>
+                        </details>
+                        <details class="group border border-white/5 rounded-xl overflow-hidden bg-white/[0.02]">
+                            <summary class="flex justify-between items-center p-5 cursor-pointer hover:bg-white/[0.05] transition">
+                                <span class="font-bold text-sm md:text-base">Q16. 可以同時使用多個 AI 模型嗎？</span>
+                                <i class="fas fa-chevron-down text-xs group-open:rotate-180 transition"></i>
+                            </summary>
+                            <div class="p-5 text-gray-400 text-sm leading-relaxed border-t border-white/5">
+                                可以！我會幫你設定 /g3f, /k25, /thinking 等指令，讓系統依據任務性質自動切換。
+                            </div>
+                        </details>
+                        <details class="group border border-white/5 rounded-xl overflow-hidden bg-white/[0.02]">
+                            <summary class="flex justify-between items-center p-5 cursor-pointer hover:bg-white/[0.05] transition">
+                                <span class="font-bold text-sm md:text-base">Q17. 可以客製化自動化流程嗎？</span>
+                                <i class="fas fa-chevron-down text-xs group-open:rotate-180 transition"></i>
+                            </summary>
+                            <div class="p-5 text-gray-400 text-sm leading-relaxed border-t border-white/5">
+                                可以！如自動整理截圖、自動下載 YT 生成簡報、監控電商訂單等。
+                            </div>
+                        </details>
+                        <details class="group border border-white/5 rounded-xl overflow-hidden bg-white/[0.02]">
+                            <summary class="flex justify-between items-center p-5 cursor-pointer hover:bg-white/[0.05] transition">
+                                <span class="font-bold text-sm md:text-base">Q18. 資料安全嗎？</span>
+                                <i class="fas fa-chevron-down text-xs group-open:rotate-180 transition"></i>
+                            </summary>
+                            <div class="p-5 text-gray-400 text-sm leading-relaxed border-t border-white/5">
+                                資料儲存在本地，API Key 絕不外洩，可設定防火牆與權限控管。
+                            </div>
+                        </details>
+                    </div>
+                </div>
+
+                <!-- 更多問答 -->
+                <details class="group border border-white/5 rounded-xl overflow-hidden bg-red-500/5">
+                    <summary class="flex justify-between items-center p-5 cursor-pointer hover:bg-white/[0.05] transition">
+                        <span class="font-bold text-red-400">點擊展開其餘 15 項進階問答（Q19 - Q33）</span>
+                        <i class="fas fa-chevron-down text-xs group-open:rotate-180 transition text-red-400"></i>
+                    </summary>
+                    <div class="p-5 space-y-6 border-t border-white/5 text-gray-400 text-sm leading-relaxed">
+                        <div>
+                            <strong class="text-white">Q19. 安裝後電腦會變慢嗎？</strong><br>資源佔用小，但建議 8GB 記憶體與 SSD 硬碟。
+                        </div>
+                        <div>
+                            <strong class="text-white">Q20. 可以多人共用嗎？</strong><br>技術上可以，但建議獨立安裝以確保隱私。
+                        </div>
+                        <div>
+                            <strong class="text-white">Q21. 手機可以使用嗎？</strong><br>手機透過 TG 互動，安裝需在電腦上。
+                        </div>
+                        <div>
+                            <strong class="text-white">Q22. 如果電腦重開機怎麼辦？</strong><br>我會幫你設定開機自動啟動。
+                        </div>
+                        <div>
+                            <strong class="text-white">Q23. 可以搬到別台電腦嗎？</strong><br>提供備份還原教學或加購遷移服務。
+                        </div>
+                        <div>
+                            <strong class="text-white">Q24. 什麼是「第二大腦」？</strong><br>自動歸檔截圖、網頁、筆記的 AI 知識管理系統。
+                        </div>
+                        <div>
+                            <strong class="text-white">Q25. 可以串接蝦皮 API 嗎？</strong><br>可以！包含訂單抓取、出貨通知與銷售分析。
+                        </div>
+                        <div>
+                            <strong class="text-white">Q26. 需要學程式嗎？</strong><br>基本使用不需要，進階客製化才需要概念。
+                        </div>
+                        <div>
+                            <strong class="text-white">Q27. 可以商業使用嗎？</strong><br>開源軟體商業使用完全合法。
+                        </div>
+                        <div>
+                            <strong class="text-white">Q28. 如果服務商消失了怎麼辦？</strong><br>提供完整文件，程式碼開源可由他人接手。
+                        </div>
+                        <div>
+                            <strong class="text-white">Q29. 如果 OpenCRAW 停止更新？</strong><br>已裝版本可續用，或遷移到 n8n 等平台。
+                        </div>
+                        <div>
+                            <strong class="text-white">Q30. 遇到 Bug 怎麼辦？</strong><br>保固期內聯絡我，或參考 GitHub Issues 與社群。
+                        </div>
+                        <div>
+                            <strong class="text-white">Q31. 如何開始？</strong><br>私訊諮詢 → 確認方案 → 付款預約 → 遠端安裝 → 驗收。
+                        </div>
+                        <div>
+                            <strong class="text-white">Q32. 安裝時間？</strong><br>平日晚上或週末全天，企業方案可配合上班。
+                        </div>
+                        <div>
+                            <strong class="text-white">Q33. 付款方式？</strong><br>轉帳、LINE Pay、街口、蝦皮下單（刷卡需手續費）。
+                        </div>
+                    </div>
+                </details>
             </div>
         </div>
     </section>
