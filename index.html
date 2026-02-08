@@ -67,6 +67,23 @@
             margin-bottom: 1rem;
             display: inline-block;
         }
+        .product-img-wrapper {
+            width: 100%;
+            height: 200px;
+            border-radius: 1rem;
+            overflow: hidden;
+            margin-bottom: 1.5rem;
+            background: #1a1a1e;
+        }
+        .product-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .card-glass:hover .product-img {
+            transform: scale(1.1);
+        }
         details > summary { list-style: none; }
         details > summary::-webkit-details-marker { display: none; }
         @keyframes float {
@@ -142,6 +159,9 @@
             <div class="grid lg:grid-cols-3 gap-8 items-stretch">
                 <!-- Economic (Little Lobster) -->
                 <div class="card-glass p-8 rounded-3xl flex flex-col border-white/5" data-aos="fade-up" data-aos-delay="100">
+                    <div class="product-img-wrapper">
+                        <img src="assets/little-lobster.jpg" alt="Little Lobster M1" class="product-img">
+                    </div>
                     <div class="hardware-spec-badge">小龍蝦 M1 版本</div>
                     <h3 class="text-2xl font-bold mb-2">經濟版 一體化方案</h3>
                     <div class="mb-6">
@@ -164,6 +184,9 @@
 
                 <!-- Business (Medium/Big Lobster) -->
                 <div class="card-glass p-8 rounded-3xl border-red-500/50 bg-red-500/5 relative flex flex-col" data-aos="fade-up" data-aos-delay="200">
+                    <div class="product-img-wrapper">
+                        <img src="assets/big-lobster.jpg" alt="Big Lobster M2" class="product-img">
+                    </div>
                     <div class="absolute top-0 right-0 bg-red-500 text-white text-[10px] font-bold px-3 py-1 rounded-bl-xl rounded-tr-3xl uppercase tracking-widest">高性價比</div>
                     <div class="hardware-spec-badge">小/大龍蝦 自選版本</div>
                     <h3 class="text-2xl font-bold mb-2">商務版 一體化方案</h3>
@@ -187,6 +210,9 @@
 
                 <!-- Premium (Big Lobster HA) -->
                 <div class="card-glass p-8 rounded-3xl flex flex-col border-white/5" data-aos="fade-up" data-aos-delay="300">
+                    <div class="product-img-wrapper">
+                        <img src="assets/big-lobster.jpg" alt="Premium Big Lobster M2" class="product-img">
+                    </div>
                     <div class="hardware-spec-badge">旗艦大龍蝦 M2 版本</div>
                     <h3 class="text-2xl font-bold mb-2">豪華版 一體化方案</h3>
                     <div class="mb-6">
