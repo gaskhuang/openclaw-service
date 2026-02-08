@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OpenClaw 智能情報解決方案 - G大專業代建</title>
+    <title>OpenCRAW 龍蝦系統建置服務 - 智能情報與高可用解決方案</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -59,13 +59,13 @@
             100% { transform: translateY(0px); }
         }
         .floating { animation: float 6s ease-in-out infinite; }
-        .model-badge {
-            background: rgba(255,255,255,0.1);
-            border: 1px solid rgba(255,255,255,0.2);
+        .badge-ha {
+            background: linear-gradient(90deg, #ef4444 0%, #991b1b 100%);
             padding: 2px 8px;
             border-radius: 4px;
             font-size: 0.7rem;
-            font-weight: 600;
+            font-weight: 800;
+            letter-spacing: 0.05em;
         }
     </style>
 </head>
@@ -76,12 +76,12 @@
         <div class="max-w-7xl mx-auto flex justify-between items-center">
             <div class="flex items-center space-x-2">
                 <i class="fas fa-hand-holding-hand text-red-500 text-2xl lobster-icon"></i>
-                <span class="text-xl font-bold tracking-wider outfit">OpenClaw <span class="text-red-500">Intelligence</span></span>
+                <span class="text-xl font-bold tracking-wider outfit">OpenCRAW <span class="text-red-500">Intelligence</span></span>
             </div>
             <div class="hidden md:flex space-x-8 text-sm font-medium">
-                <a href="#features" class="hover:text-red-500 transition">技術核心</a>
-                <a href="#crawler" class="hover:text-red-500 transition">情報中心</a>
-                <a href="#plans" class="hover:text-red-500 transition">方案選擇</a>
+                <a href="#features" class="hover:text-red-500 transition">功能盤點</a>
+                <a href="#solutions" class="hover:text-red-500 transition">定價方案</a>
+                <a href="#addons" class="hover:text-red-500 transition">加購項目</a>
                 <a href="#faq" class="hover:text-red-500 transition">常見問題</a>
             </div>
             <a href="#contact" class="btn-primary px-6 py-2 rounded-full text-sm font-bold">立即諮詢</a>
@@ -98,25 +98,25 @@
         <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
             <div data-aos="fade-right">
                 <div class="inline-block px-4 py-1 rounded-full bg-red-500/10 border border-red-500/20 text-red-500 text-xs font-bold mb-6">
-                    NEXT-GEN AI INTELLIGENCE SOLUTIONS
+                    DUAL-AGENT HIGH AVAILABILITY SYSTEM
                 </div>
                 <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
-                    不只是安裝 <br> 
-                    <span class="text-gradient">更是你的數位情報員</span>
+                    OpenCRAW <br> 
+                    <span class="text-gradient">龍蝦系統建置服務</span>
                 </h1>
                 <p class="text-lg text-gray-400 mb-8 max-w-lg leading-relaxed">
-                    搭載 <b>Gemini 2.5</b>、<b>gpt-oss-120b</b> 與 <b>Kimi k2.5</b> 多模型軍團。從自動化監控 X/Reddit 到 24/7 情報 Hub 部署，我們為您打造一套具備「自主行動力」的智能體系。
+                    不再只是聊天，我們為您打造具備「自主行動力」與「高可用架構」的 AI 代理。雙龍蝦備援、每晚自動結算、Token 極致優化，這才是真正的企業級智能助手。
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="#plans" class="btn-primary px-8 py-4 rounded-xl text-center font-bold">查看情報方案</a>
-                    <a href="#crawler" class="px-8 py-4 rounded-xl border border-white/10 hover:bg-white/5 transition text-center font-bold">探索情報中心</a>
+                    <a href="#solutions" class="btn-primary px-8 py-4 rounded-xl text-center font-bold">查看規格方案</a>
+                    <a href="#features" class="px-8 py-4 rounded-xl border border-white/10 hover:bg-white/5 transition text-center font-bold">功能詳解</a>
                 </div>
             </div>
             <div class="relative flex justify-center" data-aos="zoom-in">
                 <div class="floating relative z-10 text-center">
-                    <div class="w-64 h-64 md:w-80 md:h-80 bg-gradient-to-br from-red-600 to-indigo-900 rounded-3xl rotate-12 flex flex-col items-center justify-center shadow-2xl overflow-hidden group border border-white/10">
-                        <i class="fas fa-brain text-7xl text-white mb-4 group-hover:scale-110 transition duration-500"></i>
-                        <div class="text-white font-bold text-xl tracking-widest uppercase">Multi-Agent</div>
+                    <div class="w-64 h-64 md:w-80 md:h-80 bg-gradient-to-br from-red-600 to-red-950 rounded-3xl rotate-12 flex flex-col items-center justify-center shadow-2xl overflow-hidden group border border-white/10">
+                        <i class="fas fa-hand-holding-hand text-8xl text-white mb-4 group-hover:scale-110 transition duration-500"></i>
+                        <div class="text-white font-bold text-xl tracking-widest uppercase">Dual Agent HA</div>
                     </div>
                 </div>
                 <!-- Abstract decorations -->
@@ -127,190 +127,147 @@
         </div>
     </section>
 
-    <!-- Model Swarm Section -->
+    <!-- Core Features -->
     <section id="features" class="py-24 bg-white/[0.02]">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center mb-16" data-aos="fade-up">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">多模型軍團：為不同任務選擇最強大腦</h2>
-                <p class="text-gray-400">我們不再依賴單一 AI，而是為您的情報系統配置最適合的工具</p>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">功能盤點與技術定義</h2>
+                <p class="text-gray-400">標準化技術語言，將需求轉化為實質商機</p>
             </div>
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="card-glass p-8 rounded-2xl" data-aos="fade-up" data-aos-delay="100">
-                    <div class="flex justify-between items-start mb-6">
-                        <div class="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center">
-                            <i class="fas fa-eye text-blue-400 text-xl"></i>
-                        </div>
-                        <span class="model-badge">Gemini 2.5</span>
+                    <div class="w-12 h-12 bg-red-500/20 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-route text-red-500 text-xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-4 text-blue-400">視覺與敏捷指揮官</h3>
-                    <p class="text-gray-400 leading-relaxed text-sm">負責 256K 超長上下文掃描與網頁視覺分析。適合處理海量社群動態抓取與即時截圖辨識。</p>
+                    <h3 class="text-xl font-bold mb-4">LLM 路由與 Token 優化</h3>
+                    <p class="text-gray-400 leading-relaxed text-sm">支援 OpenAI, Claude, Gemini 多模型路由。自動選擇性價比最高模型處理任務，大幅降低 API 成本。</p>
                 </div>
                 <div class="card-glass p-8 rounded-2xl" data-aos="fade-up" data-aos-delay="200">
-                    <div class="flex justify-between items-start mb-6">
-                        <div class="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center">
-                            <i class="fas fa-microchip text-purple-400 text-xl"></i>
-                        </div>
-                        <span class="model-badge">gpt-oss-120b</span>
+                    <div class="w-12 h-12 bg-red-500/20 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-dog text-red-500 text-xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-4 text-purple-400">重裝邏輯工程師</h3>
-                    <p class="text-gray-400 leading-relaxed text-sm">120B 參數級別開源戰力，負責深度邏輯推理與商機挖掘。在 Cerebras 加速下實現秒級回覆。</p>
+                    <h3 class="text-xl font-bold mb-4">雙龍蝦高可用架構 (HA)</h3>
+                    <p class="text-gray-400 leading-relaxed text-sm">主/備 Agent 獨立運作。搭載「看門狗 (Watchdog)」機制，一旦主端掛掉，備用端立即接手，確保服務不中斷。</p>
                 </div>
                 <div class="card-glass p-8 rounded-2xl" data-aos="fade-up" data-aos-delay="300">
-                    <div class="flex justify-between items-start mb-6">
-                        <div class="w-12 h-12 bg-green-500/20 rounded-lg flex items-center justify-center">
-                            <i class="fas fa-file-contract text-green-400 text-xl"></i>
-                        </div>
-                        <span class="model-badge">Kimi k2.5</span>
+                    <div class="w-12 h-12 bg-red-500/20 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-calendar-check text-red-500 text-xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-4 text-green-400">深度分析報導員</h3>
-                    <p class="text-gray-400 leading-relaxed text-sm">專業新聞報導風格執筆。能深度解讀社群評論中的「核心與目的」，生成超過 500 字的洞察週報。</p>
+                    <h3 class="text-xl font-bold mb-4">每晚 9 點自動結算</h3>
+                    <p class="text-gray-400 leading-relaxed text-sm">每日定時彙整任務與對話，自動生成總結報告並上傳至 Google Drive 封存，實現數位化知識管理。</p>
+                </div>
+                <div class="card-glass p-8 rounded-2xl" data-aos="fade-up" data-aos-delay="400">
+                    <div class="w-12 h-12 bg-red-500/20 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-spider text-red-500 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">資訊獲取與爬蟲 (Crawler)</h3>
+                    <p class="text-gray-400 leading-relaxed text-sm">針對 Telegram, Instagram, Threads 進行抓取。自動過濾雜訊，推播精準新聞摘要。</p>
+                </div>
+                <div class="card-glass p-8 rounded-2xl" data-aos="fade-up" data-aos-delay="500">
+                    <div class="w-12 h-12 bg-red-500/20 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-plug text-red-500 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">MCP 擴充協定支援</h3>
+                    <p class="text-gray-400 leading-relaxed text-sm">讓 AI 直接讀取電腦文件、數據庫或連接外部 API，實現真正的本地數據驅動決策。</p>
+                </div>
+                <div class="card-glass p-8 rounded-2xl" data-aos="fade-up" data-aos-delay="600">
+                    <div class="w-12 h-12 bg-red-500/20 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-chart-line text-red-500 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">可視化監控看板</h3>
+                    <p class="text-gray-400 leading-relaxed text-sm">包含個人資訊看板與系統狀態看板。即時監控任務進度、回應速度與 Token 使用量。</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Crawler & Hub Features -->
-    <section id="crawler" class="py-24 bg-gradient-to-b from-red-900/10 to-transparent">
+    <!-- Pricing Packages -->
+    <section id="solutions" class="py-24">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center mb-16" data-aos="fade-up">
-                <div class="inline-block px-4 py-1 rounded-full bg-red-500/20 border border-red-500/30 text-red-400 text-sm font-bold mb-6">
-                    🛰️ SENTINEL INTELLIGENCE HUB
-                </div>
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">24/7 自動化情報與<span class="text-red-500">雲端發佈</span></h2>
-                <p class="text-gray-400 max-w-2xl mx-auto">市售唯一具備「自動化部署」能力的解決方案。您的 AI 助理不只會抓資料，還會自動產出 HTML 報告並部署至 GitHub Pages。</p>
-            </div>
-            
-            <div class="grid md:grid-cols-3 gap-8 mb-16">
-                <div class="card-glass p-8 rounded-2xl border-red-500/20" data-aos="fade-up" data-aos-delay="100">
-                    <div class="w-14 h-14 bg-red-500/20 rounded-xl flex items-center justify-center mb-6">
-                        <i class="fas fa-satellite text-red-500 text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">全能守衛監控</h3>
-                    <ul class="text-gray-400 space-y-2 text-sm">
-                        <li><i class="fas fa-check text-green-500 mr-2"></i>每 30 分鐘自動掃描 X/Reddit</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i>自動過濾關鍵字商機</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i>整合評論深度分析</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i>即時 Telegram 預警通知</li>
-                    </ul>
-                </div>
-                <div class="card-glass p-8 rounded-2xl border-red-500/20" data-aos="fade-up" data-aos-delay="200">
-                    <div class="w-14 h-14 bg-indigo-500/20 rounded-xl flex items-center justify-center mb-6">
-                        <i class="fas fa-project-diagram text-indigo-400 text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">自動化 Hub 部署</h3>
-                    <ul class="text-gray-400 space-y-2 text-sm">
-                        <li><i class="fas fa-check text-green-500 mr-2"></i>每日 6 個時段自動產報</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i>自動上傳 GitHub 倉庫</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i>視覺化 HTML 互動網頁</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i>個人專屬情報網址</li>
-                    </ul>
-                </div>
-                <div class="card-glass p-8 rounded-2xl border-red-500/20" data-aos="fade-up" data-aos-delay="300">
-                    <div class="w-14 h-14 bg-yellow-500/20 rounded-xl flex items-center justify-center mb-6">
-                        <i class="fas fa-brain text-yellow-400 text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">第二大腦同步</h3>
-                    <ul class="text-gray-400 space-y-2 text-sm">
-                        <li><i class="fas fa-check text-green-500 mr-2"></i>圖片/文件自動歸檔雲端</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i>跨 Session 長期記憶同步</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i>Google Drive 深度整合</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i>BNI 商業邏輯內化</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Dashboard Stats -->
-            <div class="bg-gradient-to-r from-red-900/20 to-indigo-900/20 rounded-3xl p-8 md:p-12 border border-white/5" data-aos="zoom-in">
-                <div class="grid md:grid-cols-4 gap-8 text-center">
-                    <div>
-                        <div class="text-4xl font-bold text-red-500 mb-2">3 平台</div>
-                        <div class="text-sm text-gray-400">X / Threads / Reddit</div>
-                    </div>
-                    <div>
-                        <div class="text-4xl font-bold text-indigo-500 mb-2">24/7</div>
-                        <div class="text-sm text-gray-400">無間斷情報監控</div>
-                    </div>
-                    <div>
-                        <div class="text-4xl font-bold text-green-500 mb-2">100%</div>
-                        <div class="text-sm text-gray-400">自動 GitHub 發佈</div>
-                    </div>
-                    <div>
-                        <div class="text-4xl font-bold text-yellow-500 mb-2">0</div>
-                        <div class="text-sm text-gray-400">人工維護需求</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pricing / Solutions -->
-    <section id="plans" class="py-24">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center mb-16" data-aos="fade-up">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">服務方案</h2>
-                <p class="text-gray-400">為您的數位轉型選擇最合適的武裝</p>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">方案定價表</h2>
+                <p class="text-gray-400">根據您的應用規模，選擇最合適的龍蝦武裝</p>
             </div>
             <div class="grid md:grid-cols-3 gap-8">
-                <!-- Social Listener -->
+                <!-- Basic -->
                 <div class="card-glass p-8 rounded-3xl flex flex-col" data-aos="fade-right">
-                    <div class="flex items-center gap-2 mb-4">
-                        <i class="fas fa-spider text-blue-400"></i>
-                        <span class="text-xs font-bold text-blue-400 uppercase tracking-wider">社群監控</span>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">社群监听专家</h3>
-                    <div class="text-3xl font-bold mb-6 text-blue-400">$6,800 <span class="text-sm text-gray-400 font-normal">/ 單次部署</span></div>
+                    <h3 class="text-xl font-bold mb-2">經濟版 (Basic)</h3>
+                    <div class="text-3xl font-bold mb-4 text-white">$5,000 <span class="text-sm text-gray-500 font-normal">/ 一次性建置</span></div>
+                    <p class="text-gray-400 text-xs mb-6">適合個人體驗、輕量使用者</p>
                     <ul class="space-y-3 mb-8 text-gray-400 flex-grow text-sm">
-                        <li><i class="fas fa-check text-blue-400 mr-2"></i> OpenClaw 核心部署</li>
-                        <li><i class="fas fa-check text-blue-400 mr-2"></i> <strong>Gemini 2.5 整合</strong></li>
-                        <li><i class="fas fa-check text-blue-400 mr-2"></i> X (Twitter) 關鍵字監控</li>
-                        <li><i class="fas fa-check text-blue-400 mr-2"></i> Reddit 熱門討論追蹤</li>
-                        <li><i class="fas fa-check text-blue-400 mr-2"></i> 每日 Telegram 情報摘要</li>
-                        <li><i class="fas fa-check text-blue-400 mr-2"></i> 7 天技術支援</li>
+                        <li><i class="fas fa-check text-red-500 mr-2"></i> OpenCRAW 核心系統安裝</li>
+                        <li><i class="fas fa-check text-red-500 mr-2"></i> Telegram 機器人對接</li>
+                        <li><i class="fas fa-check text-red-500 mr-2"></i> 1 個指定大語言模型對接</li>
+                        <li><i class="fas fa-check text-red-500 mr-2"></i> 基礎個人提醒設定</li>
+                        <li><i class="fas fa-minus text-gray-600 mr-2"></i> 無爬蟲與自動化功能</li>
                     </ul>
-                    <a href="#contact" class="block w-full py-3 rounded-xl border border-white/10 hover:border-blue-400 text-center font-medium transition">立即選擇</a>
+                    <a href="#contact" class="block w-full py-3 rounded-xl border border-white/10 hover:border-red-500 text-center font-medium transition">立即預約</a>
                 </div>
                 
-                <!-- Business Intelligence - RECOMMENDED -->
+                <!-- Business -->
                 <div class="card-glass p-8 rounded-3xl border-red-500/50 bg-red-500/5 relative flex flex-col" data-aos="fade-up">
-                    <div class="absolute top-0 right-0 bg-red-500 text-white text-[10px] font-bold px-3 py-1 rounded-bl-xl rounded-tr-3xl uppercase tracking-widest">熱門首選</div>
-                    <div class="flex items-center gap-2 mb-4">
-                        <i class="fas fa-crown text-yellow-400"></i>
-                        <span class="text-xs font-bold text-yellow-400 uppercase tracking-wider">商家情報</span>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">商家情报王</h3>
-                    <div class="text-3xl font-bold mb-6 text-red-500">$8,800 <span class="text-sm text-gray-400 font-normal">/ 全方位配置</span></div>
+                    <div class="absolute top-0 right-0 bg-red-500 text-white text-[10px] font-bold px-3 py-1 rounded-bl-xl rounded-tr-3xl uppercase tracking-widest">最熱門</div>
+                    <h3 class="text-xl font-bold mb-2">商務版 (Business)</h3>
+                    <div class="text-3xl font-bold mb-4 text-red-500">$12,000 <span class="text-sm text-gray-500 font-normal">/ 全方位賦能</span></div>
+                    <p class="text-gray-400 text-xs mb-6">適合創作者、社群小編、SOHO族</p>
                     <ul class="space-y-3 mb-8 text-gray-400 flex-grow text-sm">
-                        <li><i class="fas fa-check text-red-500 mr-2"></i> <strong>包含「社群监听」全部內容</strong></li>
-                        <li><i class="fas fa-check text-red-500 mr-2"></i> <strong>Kimi k2.5 深度分析員</strong></li>
-                        <li><i class="fas fa-check text-red-500 mr-2"></i> Google 商家競品資料抓取</li>
-                        <li><i class="fas fa-check text-red-500 mr-2"></i> 地推名單自動生成 (Excel)</li>
-                        <li><i class="fas fa-check text-red-500 mr-2"></i> <strong>GitHub 情報 Hub 自動部署</strong></li>
-                        <li><i class="fas fa-check text-red-500 mr-2"></i> <strong>第二大腦 GDrive 自動同步</strong></li>
-                        <li><i class="fas fa-check text-red-500 mr-2"></i> 30 天技術優先支援</li>
+                        <li><i class="fas fa-check text-red-500 mr-2"></i> <strong>包含經濟版所有功能</strong></li>
+                        <li><i class="fas fa-check text-red-500 mr-2"></i> <strong>Telegram + LINE OA 雙對接</strong></li>
+                        <li><i class="fas fa-check text-red-500 mr-2"></i> 2 個模型配置 (Router 分流)</li>
+                        <li><i class="fas fa-check text-red-500 mr-2"></i> 資訊情報爬蟲 (TG/IG/Threads)</li>
+                        <li><i class="fas fa-check text-red-500 mr-2"></i> 支援 MCP 系統安裝</li>
+                        <li><i class="fas fa-check text-red-500 mr-2"></i> 個人資訊 + 工作狀態看板</li>
                     </ul>
-                    <a href="#contact" class="btn-primary block w-full py-3 rounded-xl text-center font-bold">立即選擇</a>
+                    <a href="#contact" class="btn-primary block w-full py-3 rounded-xl text-center font-bold">立即部署</a>
                 </div>
                 
-                <!-- Enterprise -->
+                <!-- Premium -->
                 <div class="card-glass p-8 rounded-3xl flex flex-col" data-aos="fade-left">
-                    <div class="flex items-center gap-2 mb-4">
-                        <i class="fas fa-rocket text-purple-400"></i>
-                        <span class="text-xs font-bold text-purple-400 uppercase tracking-wider">企業級</span>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">全自动情报中心</h3>
-                    <div class="text-3xl font-bold mb-6 text-purple-400">$15,800+ <span class="text-sm text-gray-400 font-normal">/ 月费制</span></div>
+                    <h3 class="text-xl font-bold mb-2">豪華版 (Premium)</h3>
+                    <div class="text-3xl font-bold mb-4 text-white">$30,000 <span class="text-sm text-gray-500 font-normal">/ 企業級穩定</span></div>
+                    <p class="text-gray-400 text-xs mb-6">適合企業主、重視穩定與全自動者</p>
                     <ul class="space-y-3 mb-8 text-gray-400 flex-grow text-sm">
-                        <li><i class="fas fa-check text-purple-400 mr-2"></i> <strong>包含「商家情报」全部內容</strong></li>
-                        <li><i class="fas fa-check text-purple-400 mr-2"></i> <strong>gpt-oss-120b 超強推理核心</strong></li>
-                        <li><i class="fas fa-check text-purple-400 mr-2"></i> 定製化爬蟲開發 (指定網站)</li>
-                        <li><i class="fas fa-check text-purple-400 mr-2"></i> <strong>24/7 全自動哨兵監控系統</strong></li>
-                        <li><i class="fas fa-check text-purple-400 mr-2"></i> 與 ERP/CRM 數據整合</li>
-                        <li><i class="fas fa-check text-purple-400 mr-2"></i> <strong>專業戰略週報自動生成</strong></li>
-                        <li><i class="fas fa-check text-purple-400 mr-2"></i> VIP 技術支持 + 月費 $2,500</li>
+                        <li><i class="fas fa-check text-red-500 mr-2"></i> <strong>包含商務版所有功能</strong></li>
+                        <li><i class="fas fa-check text-red-500 mr-2"></i> <strong>雙龍蝦 HA 高可用架構</strong></li>
+                        <li><i class="fas fa-check text-red-500 mr-2"></i> 5 個模型極致分流策略</li>
+                        <li><i class="fas fa-check text-red-500 mr-2"></i> <strong>每晚 9 點自動結算歸檔</strong></li>
+                        <li><i class="fas fa-check text-red-500 mr-2"></i> Google / Git 異地雙備份</li>
+                        <li><i class="fas fa-check text-red-500 mr-2"></i> 資安防護調教 + 一年維護</li>
                     </ul>
-                    <a href="#contact" class="block w-full py-3 rounded-xl border border-white/10 hover:border-purple-400 text-center font-medium transition">聯絡諮詢</a>
+                    <a href="#contact" class="block w-full py-3 rounded-xl border border-white/10 hover:border-red-500 text-center font-medium transition">聯絡顧問</a>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Add-ons -->
+    <section id="addons" class="py-24 bg-white/[0.02]">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-2xl md:text-3xl font-bold mb-4 text-red-400">額外加購項目 (Add-ons)</h2>
+                <p class="text-gray-400">進階功能與維運支持</p>
+            </div>
+            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+                <div class="card-glass p-8 rounded-2xl border-white/5">
+                    <h4 class="text-lg font-bold mb-2">自動圖文行銷系統</h4>
+                    <div class="text-xl font-bold text-red-500 mb-4">$3,200 <span class="text-xs text-gray-500">/ 月</span></div>
+                    <p class="text-sm text-gray-400 mb-4">AI 自動撰寫貼文、生成配圖、自動發佈至 IG/FB/TG。包含監控與 API 維護。</p>
+                </div>
+                <div class="card-glass p-8 rounded-2xl border-white/5">
+                    <h4 class="text-lg font-bold mb-2">設備與運作支持</h4>
+                    <div class="text-xl font-bold text-red-500 mb-4">實報實銷</div>
+                    <p class="text-sm text-gray-400 mb-4">包含 VPS 主機費（GCP/AWS/Linode）或實體主機購買。進階資安/特殊架構調教依工時報價。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-24">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-8">常見問題</h2>
+            <p class="text-gray-400 mb-12 leading-relaxed">關於 <b>OpenCRAW</b> 的安裝、費用、安全與支援，我們整理了 33 項完整解答。詳情請聯繫 G大 獲取完整的客戶手冊。</p>
+            <a href="#contact" class="inline-block px-10 py-4 bg-white/5 border border-white/10 rounded-full hover:bg-white/10 transition font-bold">查看完整 FAQ 清單</a>
         </div>
     </section>
 
@@ -319,9 +276,9 @@
         <div class="max-w-7xl mx-auto px-6">
             <div class="flex items-center justify-center space-x-2 mb-6">
                 <i class="fas fa-hand-holding-hand text-red-500 text-xl lobster-icon"></i>
-                <span class="text-lg font-bold tracking-wider outfit">OpenClaw <span class="text-red-500">Intelligence</span></span>
+                <span class="text-lg font-bold tracking-wider outfit">OpenCRAW <span class="text-red-500">Intelligence</span></span>
             </div>
-            <p class="text-gray-500 text-sm">© 2026 G大 AI 助理團隊 | 本服務基於 Google DeepMind OpenClaw 開源框架優化</p>
+            <p class="text-gray-500 text-sm">© 2026 G大 AI 助理團隊 | 打造具備「自主性」的下一代數位勞動力</p>
         </div>
     </footer>
 
